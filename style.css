@@ -1,0 +1,210 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+    background-image: url();
+    background-size: cover;
+    background-position: center bottom;
+    color: #0b0505;
+  }
+}
+
+body {
+  background-size: cover;
+  background-position: center bottom;
+  padding: 0;
+  color: #050b05;
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* Header Navigation */
+.navigation {
+  background-color: #5c8d03;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.navbar .Frame4,
+.navbar .Frame2,
+.navbar .Frame3 {
+  padding: 10px 15px;
+}
+
+.navbar .Frame4:hover,
+.navbar .Frame2:hover,
+.navbar .Frame3:hover {
+  cursor: pointer;
+  background-color: transparent; 
+}
+
+.Portfolio,
+.About,
+.Resume {
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: font-size 0.3s ease; /* Add transition for smooth effect */
+}
+
+.Portfolio:hover,
+.About:hover,
+.Resume:hover {
+  font-size: 1.2em; /* Increase the font size as desired */
+  background-color: transparent; /* Remove the background color on hover */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 320px) and (max-width: 800px) {
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .navbar .Frame4,
+  .navbar .Frame2,
+  .navbar .Frame3 {
+    padding: 10px;
+  }
+}
+
+/* CSS Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* CSS Flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-item {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+  flex-basis: 200px;
+  margin: 10px;
+}
+
+.flex-item:hover {
+  background-color: #cccccc;
+}
+
+.flex-item:active {
+  background-color: #aaa;
+}
+h1 del {
+  text-decoration: line-through;
+}
+.highlight {
+  color: orange;
+  font-family: 'Your Handwriting Font', cursive;
+}
+
+
+.container ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+
+
+.container h1  {
+  position: relative;
+  animation: moveText 5s linear infinite;
+}
+
+
+
+.container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 40px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: column; /* Set flex-direction to column */
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust the height as needed */
+  background-color: #f2f2f200; /* Set the desired background color */
+}
+
+footer h1 {
+  font-size: 44px;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px; /* Add margin-top to create space between the h1 and icons */
+}
+
+.social-icons img {
+  margin: 10px;
+  width: 48px; /* Adjust the width as needed */
+  height: 48px; /* Adjust the height as needed */
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Increase the size on hover */
+}
+
+.social-icons img:active {
+  transform: scale(0.8); /* Decrease the size on active state */
+}
+@media only screen and (max-width: 600px) {
+  /* Styles for screens with a maximum width of 600px (mobile devices) */
+
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  /* Adjust other styles as needed */
+}
