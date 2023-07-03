@@ -23,13 +23,17 @@ body {
 }
 
 /* Header Navigation */
+
 .navigation {
   background-color: #5c8d03;
   padding: 10px;
   display: flex;
   align-items: center;
 }
-
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
 .logo img {
   height: 80px;
 }
